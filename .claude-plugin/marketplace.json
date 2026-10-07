@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "security-plugin",
+  "description": "Security audit tools for Claude Code: OWASP Top 10 checks for AI agent skills and for ordinary applications.",
+  "owner": {
+    "name": "dmappel",
+    "url": "https://github.com/dmappel"
+  },
+  "plugins": [
+    {
+      "name": "owasp-audit",
+      "source": "./plugins/owasp-audit",
+      "description": "Two OWASP security audit skills: owasp-agentic-audit (OWASP Agentic Skills Top 10, AST01–AST10) and owasp-app-audit (classic OWASP Top 10, A01–A10). Each writes a dated report with findings, severity, and suggested fixes.",
+      "version": "0.2.0",
+      "category": "security",
+      "tags": ["security", "owasp", "audit", "agentic", "vulnerability", "mcp", "web"]
+    }
+  ]
+}
