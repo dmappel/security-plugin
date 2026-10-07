@@ -13,7 +13,14 @@
       "description": "Audit AI agent skills, Claude Code plugins, and MCP servers against the OWASP Agentic Skills Top 10 (AST01–AST10). Writes a dated report with findings, severity, and suggested fixes.",
       "version": "0.3.0",
       "category": "security",
-      "tags": ["security", "owasp", "audit", "agentic", "mcp", "skills"]
+      "tags": [
+        "security",
+        "owasp",
+        "audit",
+        "agentic",
+        "mcp",
+        "skills"
+      ]
     },
     {
       "name": "owasp-app-audit",
@@ -21,7 +28,25 @@
       "description": "Audit application code (web apps, APIs, backends) against the classic OWASP Top 10 (A01–A10). Writes a dated report with findings, severity, and suggested fixes.",
       "version": "0.3.0",
       "category": "security",
-      "tags": ["security", "owasp", "audit", "web", "api", "vulnerability"]
+      "tags": [
+        "security",
+        "owasp",
+        "audit",
+        "web",
+        "api",
+        "vulnerability"
+      ]
+    },
+    {
+      "name": "hello-test",
+      "source": "./plugins/hello-test",
+      "description": "Experimental placeholder plugin. Its only skill replies with a fixed test message. Used to check how multiple plugins show up in the marketplace.",
+      "version": "0.1.0",
+      "category": "development",
+      "tags": [
+        "test",
+        "example"
+      ]
     }
   ]
 }

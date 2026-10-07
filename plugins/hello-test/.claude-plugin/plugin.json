@@ -1,0 +1,10 @@
+{
+  "name": "hello-test",
+  "description": "Experimental placeholder plugin. Its only skill replies with a fixed test message. Used to check how multiple plugins show up in the marketplace.",
+  "version": "0.1.0",
+  "author": {
+    "name": "dmappel",
+    "url": "https://github.com/dmappel"
+  },
+  "homepage": "https://github.com/dmappel/security-plugin"
+}

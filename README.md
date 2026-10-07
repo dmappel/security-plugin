@@ -7,6 +7,7 @@ the **OWASP Top 10**. Install one or both — each plugin is a single skill.
 |-------|-----------|------------|
 | `owasp-agentic-audit` | [OWASP Agentic Skills Top 10](https://owasp.org/www-project-agentic-skills-top-10/) (AST01–AST10) | AI agent skills, Claude Code plugins, MCP servers, prompts |
 | `owasp-app-audit` | Classic [OWASP Top 10](https://owasp.org/Top10/) (A01–A10) | Web apps, APIs, backends |
+| `hello-test` | — | Experimental placeholder: replies with a test message. Not a real check. |
 
 For a hybrid project (e.g. an MCP server with a real backend), run both.
 
