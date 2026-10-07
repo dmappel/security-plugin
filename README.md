@@ -1,11 +1,9 @@
 # security-plugin
 
-A Claude Code marketplace with one plugin, `owasp-audit`, that audits a project for security
-vulnerabilities against the **OWASP Top 10**.
+A Claude Code marketplace with two plugins that audit a project for security vulnerabilities against
+the **OWASP Top 10**. Install one or both — each plugin is a single skill.
 
-The plugin has two separate skills:
-
-| Skill | Checklist | Use it for |
+| Plugin / skill | Checklist | Use it for |
 |-------|-----------|------------|
 | `owasp-agentic-audit` | [OWASP Agentic Skills Top 10](https://owasp.org/www-project-agentic-skills-top-10/) (AST01–AST10) | AI agent skills, Claude Code plugins, MCP servers, prompts |
 | `owasp-app-audit` | Classic [OWASP Top 10](https://owasp.org/Top10/) (A01–A10) | Web apps, APIs, backends |
@@ -17,23 +15,31 @@ read-only, and audits that.
 
 ## Install
 
+Add the marketplace once:
+
 ```text
 /plugin marketplace add dmappel/security-plugin
-/plugin install owasp-audit@security-plugin
+```
+
+Then install the checks you want (or browse them in `/plugin`):
+
+```text
+/plugin install owasp-agentic-audit@security-plugin
+/plugin install owasp-app-audit@security-plugin
 ```
 
 For a local checkout, pass the folder path instead: `/plugin marketplace add /path/to/security-plugin`.
 
-Then start a new session (or `/reload-plugins`). Both skills show up under `/owasp-audit:`.
+Then start a new session (or `/reload-plugins`).
 
 ## Use
 
 Call a skill directly:
 
-- `/owasp-audit:owasp-agentic-audit`
-- `/owasp-audit:owasp-app-audit`
+- `/owasp-agentic-audit:owasp-agentic-audit`
+- `/owasp-app-audit:owasp-app-audit`
 
-Or just ask, and Claude picks the matching skill:
+Or just ask, and Claude picks the matching installed skill:
 
 - "audit this skill for security issues" → agentic
 - "check this API for OWASP vulnerabilities" → app
@@ -57,10 +63,12 @@ them tracked). They never write report artifacts into a cloned third-party repo.
 
 ```
 .claude-plugin/marketplace.json                      # marketplace "security-plugin"
-plugins/owasp-audit/
-  .claude-plugin/plugin.json                         # plugin "owasp-audit"
+plugins/owasp-agentic-audit/
+  .claude-plugin/plugin.json                         # plugin "owasp-agentic-audit"
   skills/owasp-agentic-audit/SKILL.md
   skills/owasp-agentic-audit/references/agentic-skills-top10.md
+plugins/owasp-app-audit/
+  .claude-plugin/plugin.json                         # plugin "owasp-app-audit"
   skills/owasp-app-audit/SKILL.md
   skills/owasp-app-audit/references/owasp-web-top10.md
 ```

@@ -1,0 +1,10 @@
+{
+  "name": "owasp-agentic-audit",
+  "description": "Audit AI agent skills, Claude Code plugins, and MCP servers against the OWASP Agentic Skills Top 10 (AST01–AST10). Writes a dated report with findings, severity, and suggested fixes.",
+  "version": "0.3.0",
+  "author": {
+    "name": "dmappel",
+    "url": "https://github.com/dmappel"
+  },
+  "homepage": "https://github.com/dmappel/security-plugin"
+}

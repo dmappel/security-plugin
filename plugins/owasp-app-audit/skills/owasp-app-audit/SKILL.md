@@ -15,8 +15,9 @@ description: >-
 Run a structured security audit of an application codebase against the **classic OWASP Top 10
 (A01–A10)** and produce a dated, actionable report.
 
-For AI agent skills, plugins, and MCP servers, the sibling skill `owasp-agentic-audit` applies the
-OWASP Agentic Skills Top 10 instead.
+For AI agent skills, plugins, and MCP servers, the separate `owasp-agentic-audit` plugin from the same
+`security-plugin` marketplace applies the OWASP Agentic Skills Top 10 instead. When you suggest it and
+it isn't installed, give the install command: `/plugin install owasp-agentic-audit@security-plugin`.
 
 Work through the four phases below in order. Create a TodoWrite item per phase so progress is visible.
 

@@ -1,0 +1,10 @@
+{
+  "name": "owasp-app-audit",
+  "description": "Audit application code (web apps, APIs, backends) against the classic OWASP Top 10 (A01–A10). Writes a dated report with findings, severity, and suggested fixes.",
+  "version": "0.3.0",
+  "author": {
+    "name": "dmappel",
+    "url": "https://github.com/dmappel"
+  },
+  "homepage": "https://github.com/dmappel/security-plugin"
+}

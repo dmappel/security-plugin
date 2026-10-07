@@ -15,8 +15,9 @@ description: >-
 Run a structured security audit of an agentic project (skills, plugins, agents, MCP servers) against
 the **OWASP Agentic Skills Top 10 (AST01–AST10)** and produce a dated, actionable report.
 
-For ordinary application code (web apps, APIs, backends), the sibling skill `owasp-app-audit` applies
-the classic OWASP Top 10 instead.
+For ordinary application code (web apps, APIs, backends), the separate `owasp-app-audit` plugin from
+the same `security-plugin` marketplace applies the classic OWASP Top 10 instead. When you suggest it
+and it isn't installed, give the install command: `/plugin install owasp-app-audit@security-plugin`.
 
 Work through the four phases below in order. Create a TodoWrite item per phase so progress is visible.
 
